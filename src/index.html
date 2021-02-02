@@ -8,6 +8,15 @@
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+  <h1>Angular Elements test</h1>
+  <script src="assets/ct-element.js"></script>
+  <lib-click-tracker step="5"></lib-click-tracker>
+  <script>
+    const ctElm = document.querySelector('lib-click-tracker');
+    ctElm.addEventListener('increase', (event) => {
+      console.log(event.detail);
+    });
+  </script>
   <app-root></app-root>
 </body>
 </html>

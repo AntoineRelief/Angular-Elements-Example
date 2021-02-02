@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Vanilla JS ClickTracker App</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <lib-click-tracker step="5"></lib-click-tracker>
+  <script src="assets/ct-element.js"></script>
+  <script>
+    const ctElm = document.querySelector('lib-click-tracker');
+    ctElm.addEventListener('increase', (event) => {
+      console.log(event.detail);
+    });
+  </script>
+</body>
+</html>
